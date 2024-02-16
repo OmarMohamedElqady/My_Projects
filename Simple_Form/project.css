@@ -1,0 +1,167 @@
+*{
+    margin: 10;
+    padding: 10;
+    font-family: 'MusoeModerno', cursive;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background: rgb(12, 100, 96);
+    padding: 20px, 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(46, 228, 106);
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar a{
+    position:relative;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 45px;
+}
+
+.navbar a::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    border-radius: 8px;
+    transition: all ease .45s;
+}
+
+.navbar a:hover:after{
+    width: 100%;
+
+}
+
+.btn-popup{
+    display: inline-block;
+    padding: 8px 32px;
+    background: hwb(199 29% 17%);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: 45px;
+    cursor: pointer;
+    transition: all ease .45s;
+}
+
+.btn-popup:hover{
+    transform: scale(1, 1);
+    background-color: rgb(165, 124, 168);     border: 2px solid #fff;
+    color: rgb(102, 89, 17);
+}
+
+
+body{
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(background.jpg.jpg);              /*الخلفية*/
+
+}
+
+
+.container{
+    position: relative;
+    height: 530px;
+    width: 460px;
+    background: transparent;
+    border-radius: 24px;
+    border: 3px solid rgb(202, 177, 35) ;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(5, 5, 5, 0.15) 11px 48px 100px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all ease .35s;
+}
+
+.main-box{
+    padding: 50px;
+    width: 100%;
+}
+
+.main-box h1{
+    color: #f804af;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+
+
+}
+
+.input-box{
+    position: relative;
+    height: 52px;
+    width: 100%;
+    border-bottom: 2px solid #f804af;
+    margin: 22px 0;
+
+}
+
+.input-box label{
+    position: absolute;
+    left: 6px;
+    top: 60%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #162938;
+    font-size: 17px;
+    font-weight: 500;
+    transition:all ease .45s;
+}
+
+.input-box input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #00e1ff;
+    padding: 0 30px 0 6px;
+}
+
+
+.input-box .icon{
+    position: absolute;
+    right: 9px;
+    font-size: 19px;
+    color: #00e1ff;
+    line-height: 55px;
+}
+
