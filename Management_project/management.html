@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="management.css">
+
+    </head>
+    <body>
+        <div class="crud">        <!-- شامل كل حاجه  -->
+            <div class="head">
+                <h2>crud</h2>
+                <p>PRODUCT MANAGEMENT SYETEM</p>
+            </div>
+
+            <div class="inputs">
+                <input type="text" placeholder="tittle" id="tittle">
+                <div class="price">
+                    <input onkeyup="get_total()" type="number" id="price" placeholder="price">
+                    <input onkeyup="get_total()" type="number" id="taxes" placeholder="taxes">
+                    <input onkeyup="get_total()" type="number" id="ads" placeholder="ads">
+                    <input onkeyup="get_total()" type="number" id="discount" placeholder="discount">
+                    <small id="total"></small>    
+                </div>
+                <input type="number" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+                <button id="submit">Create</button>
+
+            </div>
+
+            <div class="outputs">
+                    <div class="searchBlock">
+                        <input onkeyup="SearchData(this.value)" type="text" id="search" placeholder="search">
+                        <div class="btnSearch">
+                            <button onclick="getSearchMood(this.id)" id="SearchTitle">search by tittle</button>
+                            <button onclick="getSearchMood(this.id)" id="SearchCategory">search by category</button>
+
+                        </div>
+                    </div>
+                    <div id="deleteAll">
+
+                    </div>
+
+                    <table>
+                            <tr>       <!--الصفوف-->
+                                <th>ID</th>    <!--العنوان-->
+                                <th>title</th>    <!--العنوان-->
+                                <th>price</th>    <!--العنوان-->
+                                <th>taxes</th>    <!--العنوان-->
+                                <th>ads</th>    <!--العنوان-->
+                                <th>discount</th>    <!--العنوان-->
+                                <th>total</th>    <!--العنوان-->
+                                <th>category</th>    <!--العنوان-->
+                                <th>update</th>
+                                <th>delete</th>
+                            </tr>
+
+                            <tbody id="tbody">
+
+                            </tbody>
+
+
+                        </table>
+                    </div>
+            </div>
+
+        </div>
+
+
+        <!-- <script type="text/css" src="management.js"></script> -->
+
+        <script type="text/javascript" src="management.js"></script>
+    </body>
+</html>
