@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;                     /*بيجيبها في النص من محور ال y*/
+    justify-content: center;                /*بيجيبها في النص من محور ال x*/
+    font-family: system-ui;
+}
+
+.title{
+    color: rgb(6, 61, 61);
+    font-size: 36px;
+
+}
+
+ul{
+    position: relative;
+    left: 25px;
+    color: rgb(37, 102, 102);
+}
+
+.reload{
+    padding: 10px;
+    margin: 4px;
+    background-color:rgb(12, 92, 92);
+    outline: none;
+    border: none;
+    color: aliceblue;
+    border-radius: 20px;                /*الزرار يبقي دائري*/
+    cursor: pointer;
+}
+
+.reload:hover{
+    text-decoration: solid;
+    text-shadow: 70px;
+    background-color: rgb(11, 116, 116);
+    transform: scale(1.1);
+    transition: 0.4s ease
+}
+
+.hide{
+    display: none;
+}
