@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(#38002c, #1e0041);
+    height: 100vh;
+    display: flex;                  /*بيجيب العناصر جمب بعض */
+    flex-direction: column ;        /*بيجيبهم فوق بعض */
+    align-items: center;            /*الكلام في النص*/
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+h2{
+    color: antiquewhite;
+    font-size: 40px;
+}
+
+.prompt{
+    background-color: #2e0124;
+    padding: 5px;
+    width: 620px;
+    border: 3px solid #580145;
+    border-radius: 10px;
+}
+
+input, button{
+    padding: 10px;
+    border: none;
+    color: aliceblue;
+
+    font-size: 20px;
+}
+
+input{
+    background-color: #2e0124;
+    width: 75%;
+    outline: none;
+}
+
+button{
+    background-color: #20011a;
+    width: 20%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #6a0194;
+    transition: 2s ;
+
+}
+
+.Images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Images div{
+    height: 200px;
+    width: 200px;
+    background-color:  #4e003c;
+    border-radius: 10px;
+    border: 3px solid #20011a;
+}
+
+.Images div img{            /*لو ضيفت صورة جديده*/
+    width: 100%;
+
+}
