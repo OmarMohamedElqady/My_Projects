@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    background: #bb2222;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 40px;
+}
+
+ul li{
+    display: inline-block;                  /*جمب بعض*/
+}
+
+ul li a{
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.content .text{
+    width: 40%;                 /*اخر مكان الكتابه هتوصله*/
+    color: #fff;
+
+}
+
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.content .text a{
+    background: #fff;
+    border-radius: 17px;
+    padding: 8px 15px;
+    color: rgb(80, 34, 1);
+}
+
+.content .image{
+    width: 30%;
+}
+
+.content .image img{
+    width: 180px;
+}
+
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);                /*الصور في الوسط*/
+}
+
+.icons img{
+    width: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    transform: scale(1.2);
+
+}
